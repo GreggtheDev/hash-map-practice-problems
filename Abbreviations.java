@@ -23,3 +23,13 @@ public class Abbreviations {
     public String findExplanationFor(String abbreviation) {
         return this.abbreviationMap.getOrDefault(abbreviation, null);
     }
+
+    public static void main(String[] args) {
+        // Example usage
+        Abbreviations abbreviations = new Abbreviations();
+        abbreviations.addAbbreviation("LOL", "Laugh Out Loud");
+        System.out.println(abbreviations.hasAbbreviation("LOL")); // true
+        System.out.println(abbreviations.findExplanationFor("LOL")); // Laugh Out Loud
+        System.out.println(abbreviations.findExplanationFor("BRB")); // null
+    }
+}
