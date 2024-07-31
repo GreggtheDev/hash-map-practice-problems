@@ -10,3 +10,9 @@ public class IOU {
         // Initialize the debts map
         this.debts = new HashMap<>();
     }
+
+    // Sets the amount owed to a specific person
+    public void setSum(String toWhom, double amount) {
+        // Put the person's name and the amount owed in the debts map
+        this.debts.put(toWhom, amount);
+    }
